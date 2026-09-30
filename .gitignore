@@ -1,0 +1,11 @@
+data/
+.vscode/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+__pycache__/
+.ipynb_checkpoints/
+.env
+wandb/
+runs/
