@@ -157,4 +157,4 @@ python3 scripts/benchmark_speed.py             # forward-pass FPS (needs a CUDA 
 ## References
 
 - Bovcon et al., *The MaSTr1325 dataset for training deep USV obstacle detection models*, IROS 2019.
-- Xie et al., *SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers*, NeurIPS 2021.
+- Xie et al., *SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers*, NeurIPS 2021
