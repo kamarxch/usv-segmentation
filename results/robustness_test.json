@@ -1,0 +1,99 @@
+{
+  "clean": {
+    "miou": 0.9819798469543457,
+    "obstacle_iou": 0.9589409232139587,
+    "obstacle_recall": 0.9752577543258667
+  },
+  "low light": [
+    {
+      "severity": 1,
+      "value": 0.6,
+      "miou": 0.9824542999267578,
+      "obstacle_iou": 0.9602238535881042,
+      "obstacle_recall": 0.9765126705169678
+    },
+    {
+      "severity": 2,
+      "value": 0.35,
+      "miou": 0.9792965650558472,
+      "obstacle_iou": 0.952744722366333,
+      "obstacle_recall": 0.9672811031341553
+    },
+    {
+      "severity": 3,
+      "value": 0.15,
+      "miou": 0.9216879606246948,
+      "obstacle_iou": 0.8646486401557922,
+      "obstacle_recall": 0.8801047801971436
+    }
+  ],
+  "blur": [
+    {
+      "severity": 1,
+      "value": 1,
+      "miou": 0.9797735214233398,
+      "obstacle_iou": 0.95271897315979,
+      "obstacle_recall": 0.9654337167739868
+    },
+    {
+      "severity": 2,
+      "value": 2,
+      "miou": 0.9576863050460815,
+      "obstacle_iou": 0.9027339816093445,
+      "obstacle_recall": 0.9118102788925171
+    },
+    {
+      "severity": 3,
+      "value": 4,
+      "miou": 0.8583633303642273,
+      "obstacle_iou": 0.6867792010307312,
+      "obstacle_recall": 0.6961526870727539
+    }
+  ],
+  "fog": [
+    {
+      "severity": 1,
+      "value": 0.3,
+      "miou": 0.9817496538162231,
+      "obstacle_iou": 0.9578611850738525,
+      "obstacle_recall": 0.9728177785873413
+    },
+    {
+      "severity": 2,
+      "value": 0.5,
+      "miou": 0.9807175993919373,
+      "obstacle_iou": 0.9552444815635681,
+      "obstacle_recall": 0.9700664281845093
+    },
+    {
+      "severity": 3,
+      "value": 0.7,
+      "miou": 0.9722102880477905,
+      "obstacle_iou": 0.9394001364707947,
+      "obstacle_recall": 0.9561949968338013
+    }
+  ],
+  "glare": [
+    {
+      "severity": 1,
+      "value": 0.5,
+      "miou": 0.9671198725700378,
+      "obstacle_iou": 0.9352306127548218,
+      "obstacle_recall": 0.9470333456993103
+    },
+    {
+      "severity": 2,
+      "value": 0.8,
+      "miou": 0.8888787031173706,
+      "obstacle_iou": 0.7559982538223267,
+      "obstacle_recall": 0.7659209370613098
+    },
+    {
+      "severity": 3,
+      "value": 1.2,
+      "miou": 0.7899085879325867,
+      "obstacle_iou": 0.552731454372406,
+      "obstacle_recall": 0.5655227899551392
+    }
+  ]
+}
