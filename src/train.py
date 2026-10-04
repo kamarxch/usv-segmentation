@@ -5,31 +5,18 @@ from pathlib import Path
 import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
+from metrics import NUM_CLASSES, update_confusion, iou_from_confusion
 
 from dataset import MaSTr, IGNORE_INDEX, CLASS_NAMES
 from model import build_model
 
 ROOT = Path(__file__).resolve().parents[1]
-NUM_CLASSES = 3
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 def upsample(logits, size):
     return F.interpolate(logits, size=size, mode="bilinear", align_corners=False)
-
-
-def update_confusion(conf, pred, target):
-    valid = target != IGNORE_INDEX                   
-    pred, target = pred[valid], target[valid]
-    idx = target * NUM_CLASSES + pred                  
-    conf += torch.bincount(idx, minlength=NUM_CLASSES ** 2).reshape(NUM_CLASSES, NUM_CLASSES)
-
-
-def iou_from_confusion(conf):
-    conf = conf.float()
-    tp = conf.diag()
-    union = conf.sum(1) + conf.sum(0) - tp
-    return tp / union.clamp(min=1)                     
+                    
 
 def evaluate(model, loader):
     model.eval()

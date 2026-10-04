@@ -1,0 +1,43 @@
+{
+  "split": "test",
+  "checkpoint": "checkpoints/best.pt",
+  "num_images": 125,
+  "miou": 0.9819798469543457,
+  "per_class": {
+    "obstacle": {
+      "iou": 0.9589409232139587,
+      "precision": 0.9828521013259888,
+      "recall": 0.9752577543258667
+    },
+    "water": {
+      "iou": 0.9915029406547546,
+      "precision": 0.9929810166358948,
+      "recall": 0.9985010027885437
+    },
+    "sky": {
+      "iou": 0.995495617389679,
+      "precision": 0.999309241771698,
+      "recall": 0.9961811304092407
+    }
+  },
+  "class0_recall_by_region_size": {
+    "small (<500 px)": {
+      "components": 973,
+      "gt_pixels": 26282,
+      "found_pixels": 22004,
+      "recall": 0.837226999467316
+    },
+    "medium (500-5000 px)": {
+      "components": 73,
+      "gt_pixels": 104871,
+      "found_pixels": 99985,
+      "recall": 0.9534094268196165
+    },
+    "large (>=5000 px)": {
+      "components": 104,
+      "gt_pixels": 1814788,
+      "found_pixels": 1775805,
+      "recall": 0.9785192540395903
+    }
+  }
+}
